@@ -1,0 +1,26 @@
+syntax = "proto3";
+package Login;
+
+message ClientNeedLogin_LC
+{
+
+}
+
+message ClientLogin_CL
+{
+	int32  Code = 1;
+	string SessionId = 2;
+}
+
+message LoginState_LC
+{
+	enum LoginState
+	{
+		SUCCESS = 0;
+		CODE_ERROR = 1;
+		BUSY_ERROR = 2;
+		SESSION_ERROR = 3;
+	}
+	LoginState State = 1;
+	int32 SessionId = 2;
+}
