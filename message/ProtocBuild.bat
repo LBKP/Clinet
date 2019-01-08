@@ -1,0 +1,1 @@
+pbjs -t json Login.proto > Login.js

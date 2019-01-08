@@ -8,7 +8,7 @@ module.exports = {
         "ClientLogin_CL": {
           "fields": {
             "Code": {
-              "type": "int32",
+              "type": "string",
               "id": 1
             },
             "SessionId": {
