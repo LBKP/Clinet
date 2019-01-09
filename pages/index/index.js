@@ -61,7 +61,6 @@ Page({
                     var payloda = { Code: res.code, SessionId: "" }
                     var message = protoc.createMessage("Login.ClientLogin_CL")
                     var buf = message.encode(payloda).finish()
-                    console.log(buf)
                     protoc.sendMessage(1, "Login.ClientLogin_CL", buf)
                 } else {
                     console.log("error")
